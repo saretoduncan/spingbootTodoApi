@@ -13,10 +13,13 @@ public class TodoModels {
     @Column(name = "completeTodoItem")
     private Boolean completeTodoItem;
 
+    public TodoModels() {
+    }//empty constructor
+
     public TodoModels(String todoItem, Boolean completeTodoItem) {
         this.todoItem = todoItem;
         this.completeTodoItem = completeTodoItem;
-    }
+    }//main constructor
 
     @Override
     public String toString() {
