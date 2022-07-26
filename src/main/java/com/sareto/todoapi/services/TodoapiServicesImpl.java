@@ -39,7 +39,9 @@ public class TodoapiServicesImpl implements ITodoapiServices {
 
     @Override
     public TodoModels updateTodoItems(Long id, TodoModels todoModels) {
-        return null;
+        TodoModels todoModels1 = todoRepository.findById(id).get();
+        todoModels1.setTodoItem(todoModels1.getTodoItem());
+        return todoRepository.save(todoModels1);
     }
 
     @Override
