@@ -44,6 +44,6 @@ public class TodoapiServicesImpl implements ITodoapiServices {
 
     @Override
     public void deleteTodoItems(Long id) {
-
+        todoRepository.deleteById(id);
     }
 }
