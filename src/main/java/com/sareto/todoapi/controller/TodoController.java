@@ -34,5 +34,10 @@ public class TodoController {
     public TodoModels editTodoItem(@PathVariable("id") Long id, @RequestBody TodoModels todoItem){
         return todoapiServices.updateTodoItems(id, todoItem);
     }
+    @DeleteMapping("{id}")
+    public String deleteTodoItem(@PathVariable("id") Long id){
+        todoapiServices.deleteTodoItems(id);
+        return "todo item deleted successfully";
+    }
 
 }
