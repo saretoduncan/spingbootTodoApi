@@ -19,7 +19,7 @@ public class TodoapiServicesImpl implements ITodoapiServices {
 
 
     @Override
-    public List<TodoModels> AllTodoApi() {
+    public List<TodoModels> AllTodo() {
         return todoRepository.findAll();
     }
 
