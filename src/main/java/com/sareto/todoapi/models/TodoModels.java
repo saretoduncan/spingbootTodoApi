@@ -30,4 +30,27 @@ public class TodoModels {
                 '}';
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public String getTodoItem() {
+        return todoItem;
+    }
+
+    public Boolean getCompleteTodoItem() {
+        return completeTodoItem;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setTodoItem(String todoItem) {
+        this.todoItem = todoItem;
+    }
+
+    public void setCompleteTodoItem(Boolean completeTodoItem) {
+        this.completeTodoItem = completeTodoItem;
+    }
 }
