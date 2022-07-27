@@ -11,7 +11,7 @@ public class TodoModels {
     @Column(name = "todoItem")
     private String todoItem;
     @Column(name = "completeTodoItem")
-    private Boolean completeTodoItem;
+    private Boolean completeTodoItem=false;
 
     public TodoModels() {
     }//empty constructor
