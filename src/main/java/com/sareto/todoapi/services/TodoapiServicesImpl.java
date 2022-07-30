@@ -31,7 +31,7 @@ public class TodoapiServicesImpl implements ITodoapiServices {
     @Override
     public Optional<TodoModels> getTodoItemById(Long id) throws IllegalAccessException {
         Optional<TodoModels> todoModel= todoRepository.findById(id);
-        if(todoModel.isEmpty()){
+        if(todoModel==null){
             throw new IllegalAccessException("todo item doesn't exit");
         }
         return todoModel;
